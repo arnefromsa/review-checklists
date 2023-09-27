@@ -33,7 +33,11 @@
                     },
                     "guid": {
                         "type": "string",
-                        "description": "A unique GUID for the recommendation."
+                        "description": "A globally unique GUID for the recommendation."
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "A locally unique ID (only for this checklist) used primarily for sorting."
                     },
                     "link": {
                         "type": "string",
@@ -78,6 +82,10 @@
                     "simple": {
                         "type": "integer",
                         "description": "[EXPERIMENTAL] Documents the impact of this recommendation to the complexity of a solution."
+                    },
+                    "amm": {
+                        "type": "boolean",
+                        "description": "Whether a specific check is relevant for an AMM review."
                     },
                     "topics": {
                         "type":"array",
